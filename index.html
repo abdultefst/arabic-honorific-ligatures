@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التلاقيح الشريفة</title>
+    <meta
+      name="description"
+      content="Arabic honorific ligatures art and typography demo for GitHub Pages."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="brand-mark">ع</span>
+          <div>
+            <p class="eyebrow">Arabic typography</p>
+            <h1>التلاقيح الشريفة</h1>
+          </div>
+        </div>
+        <a class="github-link" href="https://github.com/abdultefst/arabic-honorific-ligatures" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </header>
+
+      <main class="hero">
+        <section class="intro">
+          <p class="kicker">Honorific ligatures studio</p>
+          <h2>نص عربي يتحول إلى فن، لا إلى خط عادي.</h2>
+          <p class="subtext">
+            هذا الموقع يركز على تشكيل عربي ذكي، تلاقيح توضيحية، وأشكال عربية فاخرة دون استخدام
+            <strong>Amiri</strong> كخط أساسي، مع اعتماد خطوط حديثة وملائمة للويب.
+          </p>
+          <div class="sample-row" aria-label="Arabic samples">
+            <span class="sample-word sample-a">السلام</span>
+            <span class="sample-word sample-b">عليكم</span>
+            <span class="sample-word sample-c">رحمة</span>
+          </div>
+        </section>
+
+        <section class="studio panel">
+          <label for="sourceText" class="field-label">اكتب أي نص عربي</label>
+          <textarea id="sourceText" rows="7" spellcheck="false" aria-label="Arabic text input">السلام عليكم ورحمة الله وبركاته</textarea>
+
+          <div class="controls">
+            <button id="transformBtn" type="button">حول إلى تلاقيح فاخرة</button>
+            <button id="sampleBtn" type="button" class="secondary">نموذج</button>
+            <button id="clearBtn" type="button" class="secondary ghost">مسح</button>
+          </div>
+
+          <div class="result-panel">
+            <p class="field-label">معاينة</p>
+            <div id="output" class="output" aria-live="polite">السلام عليكم ورحمة الله وبركاته</div>
+          </div>
+        </section>
+      </main>
+
+      <section class="info-grid">
+        <article class="panel method-card">
+          <h3>أفضل الخوارزميات</h3>
+          <ul>
+            <li>Unicode normalization و NFC</li>
+            <li>Arabic contextual shaping</li>
+            <li>Presentation Forms ligatures</li>
+            <li>font-feature-settings مع ligatures</li>
+          </ul>
+        </article>
+
+        <article class="panel method-card">
+          <h3>ما الذي نفعله هنا</h3>
+          <ul>
+            <li>نحوّل الحروف إلى أشكال عربية فاخرة</li>
+            <li>نستخدم خطًّا حديثًا وليس Amiri</li>
+            <li>نصنع تجربة «artistic Arabic» للويب</li>
+            <li>نستهدف GitHub Pages بشكل جاهز للنشر</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
